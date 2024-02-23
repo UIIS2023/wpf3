@@ -30,7 +30,7 @@ jobs:
         shell: powershell
 
       - name: Restore NuGet packages
-        run: dotnet restore WpfKnjizara.sln
+        run: dotnet restore Apoteka.sln
         shell: powershell
 
       - name: Build and analyze
