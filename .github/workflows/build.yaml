@@ -40,5 +40,5 @@ jobs:
         shell: powershell
         run: |
           dotnet-sonarscanner begin /k:"UIIS2023_wpf3" /o:"uiis2023" /d:sonar.login="${{ secrets.SONAR_TOKEN }}" /d:sonar.host.url="https://sonarcloud.io"
-          msbuild /t:Rebuild /p:Configuration=Release ApotekaSln.sln
+          msbuild /t:Rebuild /p:Configuration=Release Apoteka.sln
           dotnet-sonarscanner end /d:sonar.login="${{ secrets.SONAR_TOKEN }}"
